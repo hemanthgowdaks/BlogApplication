@@ -1,5 +1,11 @@
+import Link from "next/link";
 import styles from "./homepage.module.css";
 
 export default function Home() {
-  return <div>Hello</div>;
+  return (
+    <>
+    <h1>some big headding</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur facilis obcaecati necessitatibus adipisci. Accusantium labore, illo, distinctio quidem eum laboriosam odit nostrum, nulla debitis blanditiis consequatur incidunt officiis dolorum esse reprehenderit rerum sunt maxime optio perspiciatis quae dolor eos quos? Vero autem quidem veritatis eligendi blanditiis, nesciunt esse accusamus dolorem vel eum obcaecati assumenda officia cumque porro sapiente corrupti, itaque, modi perferendis? Soluta quam cum repellendus in eveniet, voluptatibus vitae perspiciatis unde quos nisi natus, qui odio ab est quasi delectus eos eaque dicta eius quisquam debitis. Assumenda, cupiditate blanditiis! Quae voluptatem nihil consequatur adipisci vitae, aliquam, repellat nostrum alias non a ex odit aliquid fugiat ipsam pariatur veritatis deserunt. Obcaecati pariatur perspiciatis dolor explicabo aspernatur, sequi nesciunt consequatur laudantium molestiae delectus quas officiis a harum sint doloribus iste maxime. Consectetur, quo repudiandae reiciendis atque eveniet voluptas harum, labore dolor provident illum maxime quidem, nulla natus. Repudiandae, ipsa! Reprehenderit dolores repudiandae error cumque rem, quo sed earum odit vitae mollitia sit ex alias nihil incidunt in sunt doloremque. Fuga eius ipsam dolore provident maxime et, eaque minima vitae amet? Hic maxime ipsum consectetur voluptatem? Natus reprehenderit, aliquam odio consequuntur aperiam necessitatibus molestiae tempore sit nesciunt qui in culpa corrupti, incidunt sequi tenetur est, esse facere perspiciatis ducimus. Pariatur iusto explicabo velit eum iste architecto. Velit incidunt tempora dignissimos ducimus vero totam sequi, recusandae hic enim doloribus magnam ex quam repellendus quis quibusdam voluptates officia dolorem assumenda atque labore, voluptatibus aliquam. Commodi dolores quaerat numquam facere placeat necessitatibus molestias repellendus culpa nesciunt neque obcaecati nemo, ab ipsam dicta illum esse quasi quas rerum dolore delectus libero. Magni consequatur provident nihil eos minus natus beatae, recusandae cum. Ea explicabo corrupti saepe soluta officia adipisci provident cupiditate quidem earum illo vitae molestias, neque laboriosam unde voluptatibus facere fugit voluptatum doloremque magni impedit labore.</p>
+    </>
+  );
 }
