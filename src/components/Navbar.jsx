@@ -1,6 +1,12 @@
 import { useState } from "react";
 import Image from "./Image";
 import { Link } from "react-router-dom";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -8,11 +14,14 @@ const Navbar = () => {
   return (
     <div className="h-16 md:h-20 flex items-center justify-between">
       {/* logo */}
+
       <Link to="/" className="flex items-center gap-4 text-2xl font-bold">
         <Image src="logo.png" alt="GrowthAlgo Logo" w={32} h={32} />
         <span>Growth Algo</span>
       </Link>
+
       {/* mobile menu */}
+
       <div className="md:hidden">
         {/* MOBILE BUTTON */}
         <div
@@ -39,6 +48,7 @@ const Navbar = () => {
             ></div>
           </div>
         </div>
+
         {/* mobile link list */}
 
         <div
@@ -60,15 +70,21 @@ const Navbar = () => {
 
       {/* desktop menu */}
       <div className="hidden md:flex items-center gap-4 xl:gap-8 font-medium">
-        <a href="/">Home</a>
-        <a href="/">Trending</a>
-        <a href="/">Most Popular</a>
-        <a href="/">About</a>
-        <a href="/">
-          <button className="bg-blue-800 px-8 py-2 rounded-3xl text-white">
-            Login
-          </button>
-        </a>
+        <Link to="/">Home</Link>
+        <Link to="/">Trending</Link>
+        <Link to="/">Most Popular</Link>
+        <Link to="/">About</Link>
+
+        <SignedOut>
+          <Link to="/login">
+            <button className="bg-blue-800 px-8 py-2 rounded-3xl text-white">
+              Login
+            </button>
+          </Link>
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </div>
     </div>
   );
