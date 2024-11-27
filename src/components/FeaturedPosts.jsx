@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const FeaturedPosts = () => {
   return (
-    <div className="mt-8 flex flex-col md:flex-row gap-8">
+    <div className="mt-8 flex flex-col lg:flex-row gap-8">
       {/* first */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4">
         {/* image */}
         <Image
           src="featured1.jpeg"
-          className="rounded-3xl object-cover"
+          className="rounded-3xl object-cover w=895"
         ></Image>
         {/* details */}
         <div className="flex items-center gap-4">
@@ -30,11 +30,14 @@ const FeaturedPosts = () => {
       {/* others */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4">
         {/* second */}
-        <div className="lg:h-1/3 flex justify-between gap-4 ">
-          <Image
-            src="featured2.jpeg"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+        <div className="lg:h-1/3 flex justify-between gap-4">
+          <div className="w-1/3 aspect-video">
+            <Image
+              src="featured2.jpeg"
+              className="rounded-3xl object-cover w-full h-full"
+              w="298"
+            />
+          </div>
           {/* details and title  */}
           <div className="w-2/3">
             {/* details  */}
@@ -53,11 +56,14 @@ const FeaturedPosts = () => {
           </div>
         </div>
         {/* third */}
-        <div className="lg:h-1/3 flex justify-between gap-4 ">
-          <Image
-            src="featured2.jpeg"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+        <div className="lg:h-1/3 flex justify-between gap-4">
+          <div className="w-1/3 aspect-video">
+            <Image
+              src="featured3.jpeg"
+              className="rounded-3xl object-cover w-full h-full"
+              w="298"
+            />
+          </div>
           {/* details and title  */}
           <div className="w-2/3">
             {/* details  */}
@@ -76,11 +82,14 @@ const FeaturedPosts = () => {
           </div>
         </div>
         {/* fourth */}
-        <div className="lg:h-1/3 flex justify-between gap-4 ">
-          <Image
-            src="featured2.jpeg"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+        <div className="lg:h-1/3 flex justify-between gap-4">
+          <div className="w-1/3 aspect-video">
+            <Image
+              src="featured4.jpeg"
+              className="rounded-3xl object-cover w-full h-full"
+              w="298"
+            />
+          </div>
           {/* details and title  */}
           <div className="w-2/3">
             {/* details  */}
