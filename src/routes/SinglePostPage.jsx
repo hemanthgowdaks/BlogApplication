@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Image from "../components/Image";
 import PostMenuActions from "../components/PostMenuActions";
+import Search from "../components/Search";
+import Comments from "../components/Comments";
 
 const SinglePostPage = () => {
   return (
@@ -31,7 +33,7 @@ const SinglePostPage = () => {
       </div>
 
       {/* content  */}
-      <div className="flex flex-col md:flex-row gap-8">
+      <div className="flex flex-col md:flex-row gap-12">
         {/* text  */}
         <div className="lg:text-lg flex flex-col gap-6 text-justify">
           <p>
@@ -73,19 +75,48 @@ const SinglePostPage = () => {
             odit sint atque fugit laborum debitis explicabo! Autem cumque qui
             sit aliquid.
           </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel maxime
+            rerum harum itaque aliquam et. Totam quasi reiciendis mollitia porro
+            natus, error, eum ex soluta similique quia repellat nihil ipsa iste,
+            consequatur deserunt. Quibusdam, dolorem dicta. Quisquam eveniet
+            repellendus nobis deserunt voluptatum unde qui, maiores corrupti,
+            iste veritatis natus sunt. Veniam, dolores qui illo tenetur, ab
+            architecto vel corrupti, odio placeat deleniti non officiis ducimus?
+            Reprehenderit, dolore sit. Sunt alias, eveniet distinctio harum nemo
+            impedit ipsam necessitatibus nulla consectetur soluta quaerat porro
+            deserunt illo deleniti provident veritatis ducimus itaque?
+            Exercitationem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid qui
+            error eum officiis laudantium possimus dolorem corrupti inventore
+            facere nihil nulla nostrum rem rerum, id quae cum debitis odio.
+            Officiis cum id consectetur ut dicta explicabo ratione ullam optio
+            atque dolores officia suscipit sunt quod laborum non quaerat ad quis
+            aspernatur quae alias nihil perspiciatis blanditiis, modi repellat?
+            Numquam tempora amet fugit, facere nisi optio hic exercitationem
+            adipisci tempore ex fugiat provident voluptates temporibus
+            consequuntur eos, explicabo nam, dignissimos esse reprehenderit?
+            Numquam, obcaecati doloribus recusandae modi minus totam sint,
+            doloremque ad consequatur aspernatur quo harum odit voluptate culpa
+            impedit est!
+          </p>
         </div>
         {/* menu  */}
-        <div className="px-4 h-max sticky top-8 bg-white">
-          <h1>Author</h1>
-          <div className="">
-            <Image
-              src="userImg.jpeg"
-              className="w-12 h-12 rounded-full object-cover"
-              w="48"
-              h="48"
-            />
-            <Link>John Doe</Link>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div className="px-4 h-max sticky top-8">
+          <h1 className="mt-8 mb-4 text-sm font-medium">Author</h1>
+          <div className="flex flex-col gap-8">
+            <div className="flex items-center gap-8">
+              <Image
+                src="userImg.jpeg"
+                className="w-12 h-12 rounded-full object-cover"
+                w="48"
+                h="48"
+              />
+              <Link className="text-blue-800">John Doe</Link>
+            </div>
+            <p className="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <div className="flex gap-2">
               <Link>
                 <Image src="facebook.svg" />
@@ -96,8 +127,30 @@ const SinglePostPage = () => {
             </div>
           </div>
           <PostMenuActions />
+          <h1 className="mt-8 mb-4 text-sm font-medium">Categories</h1>
+          <div className="flex flex-col gap-2 text-sm">
+            <Link className="underline">All</Link>
+            <Link className="underline" to="/">
+              Web Design
+            </Link>
+            <Link className="underline" to="/">
+              Development
+            </Link>
+            <Link className="underline" to="/">
+              Databases
+            </Link>
+            <Link className="underline" to="/">
+              Seach Engines
+            </Link>
+            <Link className="underline" to="/">
+              Marketing
+            </Link>
+          </div>
+          <h1 className="mt-8 mb-4 text-sm font-medium">Search</h1>
+          <Search />
         </div>
       </div>
+      <Comments />
     </div>
   );
 };

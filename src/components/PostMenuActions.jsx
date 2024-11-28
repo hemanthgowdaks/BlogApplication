@@ -1,8 +1,8 @@
 const PostMenuActions = () => {
   return (
     <div className="">
-      <h1>Actions</h1>
-      <div className="flex items-center bg-green-200 gap-2 py-2 text-sm cursor-pointer">
+      <h1 className="mt-8 mb-4 text-sm font-medium">Actions</h1>
+      <div className="flex items-center gap-2 py-2 text-sm cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
