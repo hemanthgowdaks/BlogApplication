@@ -3,7 +3,9 @@ import mongoose, { mongo, Schema } from "mongoose";
 const postSchema = new Schema(
   {
     username: {
-      img: String, //start from here tomorrow
+      type: Schema.Types.ObjectId,
+      ref:"User",
+      required: true,
     },
     title: {
       type: String,
