@@ -1,8 +1,9 @@
-import mongoose, { mongo, Schema } from "mongoose";
+import { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 const userSchema = new Schema(
   {
-    clerkUserId:{
+    clerkUserId: {
       type: String,
       required: true,
       unique: true,
@@ -20,7 +21,7 @@ const userSchema = new Schema(
     img: {
       type: String,
     },
-    savedPost: {
+    savedPosts: {
       type: [String],
       default: [],
     },
