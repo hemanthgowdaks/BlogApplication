@@ -5,6 +5,11 @@ import ReactQuill from "react-quill-new";
 const Write = () => {
   const { isLoaded, isSignedIn } = useUser();
 
+  const mutation = useMutation({
+    mutationFn: (newPost) => {
+      return axios.post(`${import.meta.env.VITE_API_URL}}`, newPost);
+    },
+  });
   if (!isLoaded) {
     return <div>Loading...</div>;
   }

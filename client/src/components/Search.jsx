@@ -1,9 +1,7 @@
-
-
 const Search = () => {
   return (
     <div className="bg-gray-100 p-2 rounded-full flex items-center gap-2">
-        <svg
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         width="20"
@@ -19,9 +17,8 @@ const Search = () => {
         placeholder="search a post..."
         className="bg-transparent"
       />
-
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

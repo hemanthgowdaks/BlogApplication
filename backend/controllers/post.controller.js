@@ -39,8 +39,8 @@ export const deletePost = async (req, res) => {
     _id: req.params.id,
     user: user._id,
   });
-  if(!deletedPost){
-    return res.status(403).json("You can delete only your posts")
+  if (!deletedPost) {
+    return res.status(403).json("You can delete only your posts");
   }
 
   res.status(200).json(post);

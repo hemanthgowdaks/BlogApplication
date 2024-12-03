@@ -29,12 +29,13 @@ const Homepage = () => {
         {/* animated button */}
 
         <Link to="/write" className="hidden md:block relative">
-          <svg 
-            viewBox="0 0 200 200" 
-            width="200" 
+          <svg
+            viewBox="0 0 200 200"
+            width="200"
             height="200"
             // className="text-lg tracking-widest animate-spin animatedButton"
-            className="text-lg tracking-widest">
+            className="text-lg tracking-widest"
+          >
             <path
               id="circlePath"
               fill="none"
@@ -50,7 +51,7 @@ const Homepage = () => {
             </text>
           </svg>
           <button className="absolute top-0 left-0 right-0 m-auto bottom-0 w-20 h-20 bg-blue-800 rounded-full flex justify-center items-center">
-          <svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="50"

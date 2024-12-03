@@ -61,7 +61,9 @@ export const clerkWebhook = async (req, res) => {
     await Post.deleteMany({ user: deletedUser._id });
     await Comment.deleteMany({ user: deletedUser._id });
 
-    console.log(`Deleted user and associated posts/comments: ${deletedUser._id}`);
+    console.log(
+      `Deleted user and associated posts/comments: ${deletedUser._id}`
+    );
     return res.status(200).json({
       message: "User and associated data deleted successfully",
     });
